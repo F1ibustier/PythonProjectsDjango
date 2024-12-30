@@ -1,0 +1,11 @@
+{% extends 'fourth_task/menu.html' %}
+{% block title %}{{ block.super }}{% endblock %}
+{% block pagename %}Игры{% endblock %}
+{% block menu %}{{ block.super }}{% endblock %}
+{% block content %}
+{% for key, value in game_dict.items %}
+        {% for i in value %}
+            <p>{{ i }}<button>Купить</button> </p>
+        {% endfor %}
+    {% endfor %}
+{% endblock %}

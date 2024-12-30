@@ -1,0 +1,13 @@
+{% extends 'fourth_task/menu.html' %}
+{% block title %}{{ block.super }}{% endblock %}
+{% block pagename %}Корзина{% endblock %}
+{% block menu %}{{ block.super }}{% endblock %}
+{% block content %}
+    <div>
+        <h1>В вашей корзине 1 товар:</h1>
+        <h3>{{ game }}</h3>
+        <div class="order">
+            <button >Оформить заказ</button>
+        </div>
+    </div>
+{% endblock %}
